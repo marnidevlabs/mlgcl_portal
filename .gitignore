@@ -1,0 +1,10 @@
+src/frontend/build
+src/backend/composer.lock
+src/backend/.php_cs.cache
+src/backend/public/report/*
+src/frontend/build/*
+src/frontend/node_modules/*
+.env
+.idea/*
+.prettierrc
+.vscode/*
