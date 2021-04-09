@@ -21,9 +21,9 @@ class EmployeeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        return EmployeeResource::collection($this->service->getAll());
+        return EmployeeResource::collection($this->service->getAll($request->all()));
     }
 
 

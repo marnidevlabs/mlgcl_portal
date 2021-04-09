@@ -9,8 +9,9 @@ class EmployeeService extends Service
 {
     public function getAll($params = [])
     {
+        $limit = !empty($params['limit']) ? $params['limit'] : 15;
         $query = Employee::query();
-        return $query->paginate();
+        return $query->paginate(intval($limit));
     }
 
     public function create($params)
